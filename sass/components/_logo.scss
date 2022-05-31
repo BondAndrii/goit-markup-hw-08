@@ -1,0 +1,19 @@
+/* Задаю колір передньої частини логотипу */
+.logo {
+    color: var(--accent-color);
+}
+
+/* задаю колір другої частини тексту лого */
+.logotext {
+    font-family: raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    &--head {
+            color: var(--title-text-color);
+        }    
+    &--foot {
+            color: var(--second-text-color);
+        }
+}
+

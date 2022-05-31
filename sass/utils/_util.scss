@@ -1,0 +1,28 @@
+
+/* Задаю утілітарний клас для приховування будь-чого на сторінці */
+.invisible {
+    display: none;
+}
+
+/* Прибираю крапки пунктів списку */
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+/* Задаю контейнер для контенту сторінок */
+.container {
+    margin: auto;
+    padding: 0 15px;
+    width: 1200px;
+
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}

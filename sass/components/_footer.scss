@@ -1,0 +1,91 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--brc-herofooter);
+}
+
+.container.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-nav .link {
+    color: var(--second-text-color);
+
+    font-style: normal;
+    line-height: 1.71;
+}
+
+/* задаю колір контактів в футері */
+.footer-nav .contact {
+    color: var(--footer-second-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.footer-sots {
+    margin-left: 70px;
+    width: 270px;
+    /* outline: 2px solid #FFFFFF; */
+}
+
+.foot-title {
+    margin: 0px;
+
+    font-size: var(--main-font);
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--second-text-color);
+}
+
+
+
+
+.invitation {
+    line-height: 1.143;
+    text-transform: uppercase;
+
+    color: var(--second-text-color);
+}
+
+.footer-form__place {}
+
+.foot-form-wrap {}
+
+.footer__form {
+    display: flex;
+    margin-top: 20px;
+
+    text-align: center;
+    align-items: center;
+}
+
+/* .foot-label-email{} */
+.footer__input {
+    margin-right: 12px;
+    height: 50px;
+    min-width: 358px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: transparent;
+    &::placeholder {
+        display: flex;
+        align-items: center;
+        padding: 15px 16px;
+
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+

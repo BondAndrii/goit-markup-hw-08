@@ -1,0 +1,42 @@
+.featers {
+    display: flex;
+}
+
+.featers__place {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--bgc-button-color);
+    margin-bottom: 30px;
+}
+
+/* Задаю ширину лішкам списку featers */
+.featers__item {
+    width: 270px;
+    /* Задаю маржини лішкам списку featers крім останнього */
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+
+
+/* задаю колір та шрифт h3 в секції featers */
+.featers__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-size: var(--main-font);
+    line-height: 1.143;
+    text-transform: uppercase;
+}
+/* задаю колір та шрифт основного тексту в секції featers */
+.featers__decription {
+    display: inline-block;
+    line-height: 1.71;
+}

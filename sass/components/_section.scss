@@ -1,0 +1,17 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+/* задаю колір та шрифт заголовків секції */
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+}
