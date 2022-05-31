@@ -1,7 +1,14 @@
 .filter {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
+    margin-bottom: 30px;
+    justify-content: left;
+    @include tablet{
+        justify-content: center;
+    }
+    @include desktop {
+        margin-bottom: 50px;
+        
+    }
 }
 
 .filter__item {
