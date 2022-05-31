@@ -274,6 +274,8 @@ a {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-right: auto;
+  padding-left: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -286,7 +288,7 @@ a {
 /* задаю колір та шрифт заголовків секції */
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-size: 28px;
   line-height: 1.178;
@@ -295,6 +297,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.17;
   }
@@ -417,12 +420,26 @@ a {
 }
 
 /* ------------Секція команди---------------- */
-.team.section {
+.section.section-team {
   background-color: var(--bgc-button-color);
 }
 
 .team {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team__title {
@@ -436,14 +453,25 @@ a {
 }
 
 .team__item {
-  width: 270px;
+  margin-bottom: 30px;
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--second-text-color);
 }
 
-.team__item + .team__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .team__item {
+    align-items: center;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team__decription {
