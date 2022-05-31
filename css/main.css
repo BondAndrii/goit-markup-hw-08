@@ -369,6 +369,12 @@ a {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .section.works {
+    display: none;
+  }
+}
+
 .works-list {
   display: flex;
 }
