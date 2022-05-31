@@ -8,10 +8,18 @@ body {
     letter-spacing: 0.03em;
 }
 .container {
-    margin: auto;
-    padding-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
     padding-right: 15px;
-    padding-bottom: 0px;
     padding-left: 15px;
-    width: 1200px;
+    width: 100%;
+    @include mobile {
+        width: 480px;
+    }
+    @include tablet {
+        width: 768px;
+    }
+    @include desktop {
+        width: 1200px;
+    }
 }   

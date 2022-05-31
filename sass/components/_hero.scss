@@ -2,10 +2,13 @@
     margin-left: auto;
     margin-right: auto;
 
-    padding: 200px 0px 200px 0px;
+    padding: 118px 0px 118px 0px;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include desktop {
+        padding: 200px 0px 200px 0px;
+    }
 }
 
 .hero {
@@ -18,17 +21,22 @@
     background-position: center;
 }
 
-.hero-title {
-    width: 696px;
+.hero-title {    
     margin: 0px auto 40px auto;
-
+    max-width: 360px;
     color: var(--second-text-color);
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
+    
 
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @include desktop {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }

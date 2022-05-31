@@ -1,22 +1,4 @@
 @charset "UTF-8";
-/* Задаю основні стилі сторінки */
-body {
-  color: var(--general-text-color);
-  background-color: var(--second-text-color);
-  font-family: Roboto, sans-serif;
-  font-size: var(--main-font);
-  letter-spacing: 0.03em;
-}
-
-.container {
-  margin: auto;
-  padding-top: 0px;
-  padding-right: 15px;
-  padding-bottom: 0px;
-  padding-left: 15px;
-  width: 1200px;
-}
-
 :root {
   --general-text-color: #757575;
   --title-text-color: #212121;
@@ -29,6 +11,41 @@ body {
   --bgc-hero-color: rgba(47, 48, 58, 0.4);
   --sotsset-color: #AFB1B8;
   --main-font: 14px;
+}
+
+/* Задаю основні стилі сторінки */
+body {
+  color: var(--general-text-color);
+  background-color: var(--second-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: var(--main-font);
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /* Задаю утілітарний клас для приховування будь-чого на сторінці */
@@ -212,10 +229,16 @@ a {
 .section.hero {
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0px 200px 0px;
+  padding: 118px 0px 118px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section.hero {
+    padding: 200px 0px 200px 0px;
+  }
 }
 
 .hero {
@@ -229,15 +252,23 @@ a {
 }
 
 .hero-title {
-  width: 696px;
   margin: 0px auto 40px auto;
+  max-width: 360px;
   color: var(--second-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section {
