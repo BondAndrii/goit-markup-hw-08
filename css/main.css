@@ -375,38 +375,45 @@ a {
   }
 }
 
-.works-list {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .works-list {
+    display: flex;
+  }
 }
 
-.works__item {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .works__item {
+    position: relative;
+  }
+  .works__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.works__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .works__image {
+    display: block;
+  }
 }
 
-.works__image {
-  display: block;
-}
-
-.works__title {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding-left: auto;
-  padding-right: auto;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  font-size: var(--main-font);
-  line-height: 1.143;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--second-text-color);
-  background: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .works__title {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: var(--main-font);
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--second-text-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
 /* ------------Секція команди---------------- */
