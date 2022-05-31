@@ -272,8 +272,15 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* задаю колір та шрифт заголовків секції */
@@ -281,23 +288,46 @@ a {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .featers {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .featers {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 /* Задаю ширину лішкам списку featers */
 .featers__item {
-  width: calc((100%-3*30)/4);
-  /* Задаю маржини лішкам списку featers крім останнього */
+  margin-bottom: 30px;
 }
 
-.featers__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .featers__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .featers__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .featers__place {
@@ -318,7 +348,14 @@ a {
   color: var(--title-text-color);
   font-size: var(--main-font);
   line-height: 1.143;
+  text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .featers__title {
+    text-align: left;
+  }
 }
 
 /* задаю колір та шрифт основного тексту в секції featers */

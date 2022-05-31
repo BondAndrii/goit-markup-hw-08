@@ -1,6 +1,11 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 
 }
 
@@ -9,9 +14,14 @@
     margin-top: 0;
     margin-bottom: 50px;
     color: var(--title-text-color);
-
-    font-size: 36px;
-    line-height: 1.17;
+    
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.17;
+    }
+    
 
 }

@@ -1,15 +1,23 @@
 .featers {
-        display: flex;    
+    margin-bottom: -30px;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px; 
+    }
 }
 /* Задаю ширину лішкам списку featers */
 .featers__item {
-    width: calc((100%-3*30)/4);
-
-    /* Задаю маржини лішкам списку featers крім останнього */
+   margin-bottom: 30px;
+   @include tablet{
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+   }
+   @include desktop {
+       flex-basis: calc(100% / 4 - 30px);
+   }
 }
-.featers__item:not(:last-child){
-     margin-right: 30px;
- }
+
 .featers__place {
     display: flex;
     text-align: center;
@@ -20,11 +28,6 @@
     background-color: var(--bgc-button-color);
     margin-bottom: 30px;
 }
-
-
-
-
-
 /* задаю колір та шрифт h3 в секції featers */
 .featers__title {
     margin-top: 0;
@@ -34,7 +37,11 @@
 
     font-size: var(--main-font);
     line-height: 1.143;
+    text-align: center;
     text-transform: uppercase;
+    @include tablet {
+        text-align: left;
+    }
 }
 /* задаю колір та шрифт основного тексту в секції featers */
 .featers__decription {
