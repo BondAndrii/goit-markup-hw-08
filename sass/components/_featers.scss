@@ -1,26 +1,27 @@
 .featers {
-    display: flex;
+        display: flex;    
 }
+/* Задаю ширину лішкам списку featers */
+.featers__item {
+    width: calc((100%-3*30)/4);
 
+    /* Задаю маржини лішкам списку featers крім останнього */
+}
+.featers__item:not(:last-child){
+     margin-right: 30px;
+ }
 .featers__place {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: var(--bgc-button-color);
     margin-bottom: 30px;
 }
 
-/* Задаю ширину лішкам списку featers */
-.featers__item {
-    width: 270px;
-    /* Задаю маржини лішкам списку featers крім останнього */
-    &:not(:last-child) {
-            margin-right: 30px;
-        }
-}
+
 
 
 
