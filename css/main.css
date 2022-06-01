@@ -631,9 +631,18 @@ a {
 
 .sots {
   display: flex;
+  justify-content: center;
   padding: 0;
   list-style: none;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .sots {
+    justify-content: start;
+  }
 }
 
 .sots--team {
@@ -872,11 +881,20 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--brc-herofooter);
+  text-align: center;
 }
 
-.container.footer {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    text-align: left;
+    align-items: baseline;
+  }
+}
+
+.address_place {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-nav .link {
@@ -896,9 +914,11 @@ a {
 }
 
 .footer-sots {
-  margin-left: 70px;
-  width: 270px;
-  /* outline: 2px solid #FFFFFF; */
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .foot-title {
@@ -916,15 +936,23 @@ a {
   color: var(--second-text-color);
 }
 
+.footer-form__place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__form {
   display: flex;
-  margin-top: 20px;
+  flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
 /* .foot-label-email{} */
 .footer__input {
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-right: 12px;
   height: 50px;
   min-width: 358px;

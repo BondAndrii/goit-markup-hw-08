@@ -3,11 +3,19 @@
     padding-bottom: 60px;
 
     background-color: var(--brc-herofooter);
+    text-align: center;
+    @include tablet {
+        display: flex;
+        text-align: left;
+        align-items: baseline;
+    }
 }
 
-.container.footer {
-    display: flex;
-    align-items: baseline;
+
+.address_place {
+    // justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer-nav .link {
@@ -29,9 +37,15 @@
 }
 
 .footer-sots {
-    margin-left: 70px;
-    width: 270px;
-    /* outline: 2px solid #FFFFFF; */
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+    // margin-left: 70px;
+    // width: 270px;
+   
 }
 
 .foot-title {
@@ -55,13 +69,19 @@
     color: var(--second-text-color);
 }
 
-.footer-form__place {}
+.footer-form__place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // text-align: center;
+}
 
 .foot-form-wrap {}
 
 .footer__form {
     display: flex;
-    margin-top: 20px;
+    flex-direction: column;
+    // margin-top: 20px;
 
     text-align: center;
     align-items: center;
@@ -69,6 +89,8 @@
 
 /* .foot-label-email{} */
 .footer__input {
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 12px;
     height: 50px;
     min-width: 358px;
