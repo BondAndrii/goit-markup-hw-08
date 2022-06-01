@@ -101,10 +101,16 @@ a {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   align-items: center;
   margin-left: 93px;
   /* задаю колір та шрифт ссилок в блоці навігації при наваденні та переході */
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .site-nav .link:hover,
@@ -146,10 +152,23 @@ a {
 }
 
 .contact-nav {
-  display: flex;
+  display: none;
   margin-left: auto;
   /* Задаю колір та шрифт ссилок в блоці авторизації */
   /* задаю колір та шрифт ссилок в блоці авторизації при наваденні та переході */
+}
+
+@media screen and (min-width: 768px) {
+  .contact-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav {
+    flex-direction: row;
+  }
 }
 
 .contact-nav .link {
@@ -159,6 +178,12 @@ a {
   line-height: 1.143;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .contact-nav .link + .contact-nav .link {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-nav .link:hover,
@@ -175,13 +200,24 @@ a {
   color: var(--accent-color);
 }
 
-.contact__item + .contact__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contact__item + .contact__item {
+    margin-left: 50px;
+  }
 }
 
 .contact__link {
   display: flex;
   align-items: center;
+  font-size: 12px;
+  line-height: 1.167;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .mylo-icon {
@@ -858,6 +894,29 @@ a {
 .button__icon {
   margin-left: 10px;
   fill: var(--second-text-color);
+}
+
+.mobile-menu__button {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  fill: var(--title-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__button:hover {
+  fill: var(--accent-color);
+}
+
+.mobile-menu__icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------Модальне вікно---------------------------------- */
