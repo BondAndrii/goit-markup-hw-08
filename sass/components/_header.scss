@@ -32,9 +32,11 @@
     }
 }
 .site-nav__item {
-    &:not(:last-child) {
+    @include tablet{
+        &:not(:last-child) {
             margin-right: 50px;
         }
+    }
 }
 .site-nav__link {
     display: flex;

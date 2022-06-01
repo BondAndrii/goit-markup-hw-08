@@ -48,6 +48,76 @@ body {
   }
 }
 
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 48px 40px 48px 40px;
+  background-color: white;
+}
+
+.menu-nav__item + .menu-nav__item {
+  margin-top: 30px;
+}
+
+.menu-nav__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.menu-nav__link.current {
+  color: var(--accent-color);
+}
+
+.menu-contact {
+  margin-bottom: 64px;
+}
+
+.menu-contact__item + .menu-contact__item {
+  margin-top: 32px;
+}
+
+.menu-contact__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.menu-contact__link:hover {
+  color: var(--accent-color);
+  font-size: 34px;
+  line-height: 1.76;
+}
+
+.menu-sots {
+  display: flex;
+}
+
+.menu-sots__item + .menu-sots__item {
+  margin-left: 20px;
+}
+
+.menu-sots__item:before {
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.menu-sots__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 /* Задаю утілітарний клас для приховування будь-чого на сторінці */
 .invisible {
   display: none;
@@ -123,8 +193,10 @@ a {
   position: relative;
 }
 
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
