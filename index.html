@@ -399,10 +399,10 @@
         </div>
     </footer> -->
     <!-- Додаємо модальне вікно -->
-    <div class="mobile-menu">
+    <div class="mobile-menu is-hidden">
         <div class="container">
-            <button class="close__button" type="button">
-                <svg class="close__icon">
+            <button class="close-menu__button" type="button">
+                <svg class="close__icon" width="19" heidth="19">
                     <use class="close" href="./images/symbol-defs.svg#icon-vectorclose" width="11px" height="11px"></use>
                 </svg>
             </button>
@@ -411,15 +411,16 @@
                 <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link link">Портфолио</a></li>
                 <li class="menu-nav__item"><a href="" class="menu-nav__link link">Контакты</a></li>
             </ul>
-            <ul class="menu-contact list">
-                <li class="menu-contact__item">
-                    <a href="emailto:info@devstudio.com" class="menu-contact__link link">
-                        info@devstudio.com
-                    </a>
-                </li>
+            <div class="contact__place">
+            <ul class="menu-contact list">                
                 <li class="menu-contact__item">
                     <a href="tel:+380961111111" class="menu-contact__link link">
                        +38096 111 11 11
+                    </a>
+                </li>
+                <li class="menu-contact__item">
+                    <a href="emailto:info@devstudio.com" class="menu-contact__link link">
+                        info@devstudio.com
                     </a>
                 </li>
             </ul>
@@ -436,8 +437,8 @@
                 <li class="menu-sots__item">
                     <a class="menu-sots__link link" href="">LinkedIn</a>
                 </li>
-
             </ul>
+            </div>
         </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
@@ -500,5 +501,6 @@
    
     <!-- Додаємо скріпт для спрацьовування модального вікна -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

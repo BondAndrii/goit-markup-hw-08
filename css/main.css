@@ -1,4 +1,31 @@
 @charset "UTF-8";
+/* Задаю утілітарний клас для приховування будь-чого на сторінці */
+.invisible {
+  display: none;
+}
+
+/* Прибираю крапки пунктів списку */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Задаю контейнер для контенту сторінок */
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 :root {
   --general-text-color: #757575;
   --title-text-color: #212121;
@@ -56,6 +83,20 @@ body {
   left: 0;
   padding: 48px 40px 48px 40px;
   background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu-nav {
+  display: block;
+  margin-right: auto;
 }
 
 .menu-nav__item + .menu-nav__item {
@@ -75,6 +116,7 @@ body {
 }
 
 .menu-contact {
+  display: block;
   margin-bottom: 64px;
 }
 
@@ -100,12 +142,17 @@ body {
   display: flex;
 }
 
+.menu-sots__item {
+  position: relative;
+}
+
 .menu-sots__item + .menu-sots__item {
   margin-left: 20px;
 }
 
 .menu-sots__item:before {
-  margin-left: 10px;
+  content: '';
+  margin-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
@@ -118,27 +165,22 @@ body {
   color: var(--accent-color);
 }
 
-/* Задаю утілітарний клас для приховування будь-чого на сторінці */
-.invisible {
-  display: none;
+.close-menu__button {
+  border: none;
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Прибираю крапки пунктів списку */
-.list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-/* Задаю контейнер для контенту сторінок */
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+.close-menu__button:hover .close__icon,
+.close-menu__button:focus .close__icon {
+  fill: var(--accent-color);
 }
 
 p {

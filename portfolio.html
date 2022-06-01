@@ -17,16 +17,16 @@
 
 <body>
     <!--Розмічаємо голову сторінки-->
-<!-- <header class="header">
+<header class="header">
     <div class="container head-container">
         <nav class="header-nav">
             <a href="./index.html" class="logotext logotext--head link"><span class="logo">Web</span>Studio</a>
             <ul class="site-nav list">
                 <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Студия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link current">Портфолио</a></li>
+                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current link">Портфолио</a></li>
                 <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
             </ul>
-        </nav>        
+        </nav>
         <ul class="contact-nav list">
             <li class="contact__item">
                 <a href="emailto:info@devstudio.com" class="contact__link link">
@@ -45,8 +45,13 @@
                 </a>
             </li>
         </ul>
+        <button type="button" class="mobile-menu__button">
+            <svg class="mobile-menu__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+        </button>
     </div>
-</header> -->
+</header>
     <main>
         <!--Додаємо кнопки фільтру-->
         <section class="section">
@@ -248,5 +253,48 @@
         </div>
     </div>
 </footer> -->
+<div class="mobile-menu is-hidden">
+    <div class="container">
+        <button class="close-menu__button" type="button">
+            <svg class="close__icon" width="19" heidth="19">
+                <use class="close" href="./images/symbol-defs.svg#icon-vectorclose" width="11px" height="11px"></use>
+            </svg>
+        </button>
+        <ul class="menu-nav list">
+            <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link link ">Студия</a></li>
+            <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link current link">Портфолио</a></li>
+            <li class="menu-nav__item"><a href="" class="menu-nav__link link">Контакты</a></li>
+        </ul>
+        <div class="contact__place">
+            <ul class="menu-contact list">
+                <li class="menu-contact__item">
+                    <a href="tel:+380961111111" class="menu-contact__link link">
+                        +38096 111 11 11
+                    </a>
+                </li>
+                <li class="menu-contact__item">
+                    <a href="emailto:info@devstudio.com" class="menu-contact__link link">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-sots list">
+                <li class="menu-sots__item">
+                    <a class="menu-sots__link link" href="">Instagram</a>
+                </li>
+                <li class="menu-sots__item">
+                    <a class="menu-sots__link link" href="">Twitter</a>
+                </li>
+                <li class="menu-sots__item">
+                    <a class="menu-sots__link link" href="">Facebook</a>
+                </li>
+                <li class="menu-sots__item">
+                    <a class="menu-sots__link link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="./js/menu.js"></script>
 </body>
     
