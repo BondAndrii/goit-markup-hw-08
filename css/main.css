@@ -916,15 +916,28 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer {
-    display: flex;
-    text-align: left;
+    justify-content: space-between;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-place {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 .address_place {
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .address_place {
+    width: 232px;
+    margin: 0;
+  }
 }
 
 .footer-nav .link {
@@ -949,6 +962,12 @@ a {
   margin-left: auto;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-sots {
+    margin: 0;
+  }
 }
 
 .foot-title {

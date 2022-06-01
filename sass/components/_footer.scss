@@ -5,17 +5,28 @@
     background-color: var(--brc-herofooter);
     text-align: center;
     @include tablet {
-        display: flex;
-        text-align: left;
+        // display: flex;
+        justify-content: space-between;
+        // text-align: left;
         align-items: baseline;
     }
 }
-
+.footer-place{
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+    }
+}
 
 .address_place {
     // justify-content: center;
+    
     margin-right: auto;
     margin-left: auto;
+    @include tablet {
+        width: 232px;
+        margin: 0;
+    }
 }
 
 .footer-nav .link {
@@ -42,6 +53,9 @@
     margin-left: auto;
     margin-top: 60px;
     margin-bottom: 60px;
+    @include tablet {
+        margin: 0;
+    }
     
     // margin-left: 70px;
     // width: 270px;
