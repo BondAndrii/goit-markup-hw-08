@@ -939,10 +939,13 @@ a {
   line-height: 1.88;
 }
 
-.container-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--brc-herofooter);
+}
+
+.container-footer {
   text-align: center;
 }
 
@@ -985,6 +988,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-sots {
+    text-align: left;
+  }
+}
+
 .foot-title {
   margin: 0px;
   font-size: var(--main-font);
@@ -1010,6 +1019,12 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-form__place {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__place {
+    align-items: flex-start;
   }
 }
 
