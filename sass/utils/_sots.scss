@@ -1,18 +1,23 @@
 .sots {
     display: flex;
     justify-content: center;
-    padding: 0;
+    margin-bottom: 30px;
+
+    
 
     list-style: none;
     align-items: center;
     margin-right: auto;
-    margin-left: auto;
-    
-    @include desktop {
-        justify-content: start;
-    }
+    margin-left: auto; 
+    // @include desktop {
+    //         padding-bottom: 0px;
+    //     }
     &--team {
-            margin: 16px 32px 30px 32px;
+        
+            margin: 16px 32px 0px 32px;
+            @include tablet {
+                margin: 16px 32px 30px 32px
+            }
         }
     &--footer {
             padding: 0;
@@ -26,7 +31,14 @@
                     align-items: center;
                     justify-content: center;
         }
+    @include desktop {
+        justify-content: start;
+    }
 }
+// .sots--team.list {
+
+//     margin: 16px 32px 30px 32px;
+// }
 // .sots__item--foot {
 //     &+& {
 //             margin-left: 10px;
