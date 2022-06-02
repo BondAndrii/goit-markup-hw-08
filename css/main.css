@@ -429,6 +429,11 @@ a {
   fill: currentColor;
 }
 
+.mobile-menu__button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Задаю колір передньої частини логотипу */
 .logo {
   color: var(--accent-color);
@@ -1149,6 +1154,9 @@ a {
 }
 
 .mobile-menu__button {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: auto;
   border: none;
   background-color: transparent;
