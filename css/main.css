@@ -436,6 +436,7 @@ a {
 
 /* задаю колір другої частини тексту лого */
 .logotext {
+  display: block;
   font-family: raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -447,6 +448,7 @@ a {
 }
 
 .logotext--foot {
+  margin-bottom: 20px;
   color: var(--second-text-color);
 }
 
