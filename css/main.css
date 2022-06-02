@@ -384,11 +384,12 @@ a {
     line-height: 1.14;
   }
   .contact__item + .contact__item {
+    margin-top: 0;
     margin-left: 50px;
   }
 }
 
-.contact__link {
+.contact__link.link {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -396,7 +397,7 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .contact__link {
+  .contact__link.link {
     font-size: 14px;
     line-height: 1.14;
   }
