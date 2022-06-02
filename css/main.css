@@ -988,7 +988,7 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-sots {
     text-align: left;
   }
@@ -1019,11 +1019,6 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-form__place {
     margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-form__place {
     align-items: flex-start;
   }
 }
