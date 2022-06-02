@@ -7,6 +7,7 @@
     align-items: center;
     margin-right: auto;
     margin-left: auto;
+    
     @include desktop {
         justify-content: start;
     }
@@ -18,16 +19,19 @@
             margin-top: 20px;
         }
         &__item {
+            &+& {
+                    margin-left: 10px;
+                }
                     display: flex;
                     align-items: center;
                     justify-content: center;
         }
 }
-.sots__item--foot {
-    &+& {
-            margin-left: 10px;
-        }
-}
+// .sots__item--foot {
+//     &+& {
+//             margin-left: 10px;
+//         }
+// }
 
 .sots__link {
     display: flex;

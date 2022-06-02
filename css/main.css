@@ -770,7 +770,7 @@ a {
   justify-content: center;
 }
 
-.sots__item--foot + .sots__item--foot {
+.sots__item + .sots__item {
   margin-left: 10px;
 }
 
